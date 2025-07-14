@@ -154,3 +154,94 @@ footer #disclaimer p{
     text-align: center;
     font-size: 0.85em;
 }
+
+
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+
+caption {
+  background-color: #852b1b;
+  color: #fff;
+  font-size: 1.3em;
+  height: 40px;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+thead {
+    background: #BDE1FF;
+}
+
+tbody {
+    background: #EEFFE6;
+    text-align: center;
+}
+
+th, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #FFF;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+
+form {
+  margin: 40px auto;
+  text-align: left;
+}
+
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 500px;
+  border: 1px solid #ccc;
+}
+
+form .button input {
+  background-color: #4977D1;
+  color: #fff;
+  border: none;
+  height: 30px;
+  margin-left: 300px;
+  width: 200px;
+}
+
+.radios input {
+    display: inline-block;
+    width: auto;
+}
+
+h1 {
+  color: #9ed034;
+}
+
+legend {
+    color: #4977D1;
+}
+
+fieldset {
+    border: solid #9ed034 1px;
+}
+
+textarea {
+    height: 150px;
+}
