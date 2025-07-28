@@ -85,83 +85,8 @@
         </footer>
     </div> <!-- End Container -->
 
-    <script>
-        function currentTime() {
-            var d = new Date();
-            var hr = d.getHours(); 17
-            var min = d.getMinutes();
-            var sec = d.getSeconds();
-            var ampm;
-            var utchr = d.getUTCHours(); 0
-            var timediff = utchr - hr;
-
-            if (sec < 10) {
-                sec = "0" + sec;
-            }
-            if (min < 10) {
-                min = "0" + min;   
-            }
-
-            if (hr > 12) {
-                hr = hr - 12;
-                ampm = 'PM';
-            } else if (hr == 12) {
-                ampm = 'PM';
-            } else {
-                ampm = 'AM';
-            }
-
-            
-            var adjTimeDiff = (timediff < 0) ? 24 + timediff : timediff;
-            var timeZone = '';
-            switch (adjTimeDiff) {
-                case 4:
-                    timeZone = 'ET';
-                    break;
-                case 5:
-                    timeZone = 'CT';
-                    break;
-                case 6:
-                    timeZone = 'MT';
-                    break;
-                case 7:
-                    timeZone = 'PT';
-                    break;
-                default:
-                    timeZone = 'Local';
-            }
-
-            var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
-
-            document.getElementById("clock").innerText = time;
-        }
-
-        currentTime();
-        setInterval(currentTime, 1000);
-
-        var imageNames = [
-            "partners/partner-bustour.png",
-            "partners/partner-cabinrental.png",
-            "partners/partner-campingadv.png",
-            "partners/partner-collegetours.png",
-            "partners/partner-rentalbike.png",
-            "partners/partner-tourgroup.png"
-        ];
-        var partnerNames = [
-            "Bus Tour",
-            "Cabin Rental",
-            "Camping Adventure",
-            "College Tours",
-            "Bike Rental",
-            "Tour Group"
-        ];
-        var openTag = '<li class="partner"><img src="images/';
-        var closeTag = '"></li>';
-        for (var i = 0; i < imageNames.length; i++) {
-            var partnerHTML = openTag + imageNames[i] + '" alt=" Partner ' + partnerNames[i] + closeTag;
-            document.getElementById("partners").innerHTML += partnerHTML;
-        }
-    </script>
+    <script src="js/digclock.js"></script>
+    <script src="js/site_scripts.js"></script>
 
 </body>
 </html>

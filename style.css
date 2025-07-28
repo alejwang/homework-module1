@@ -222,12 +222,14 @@ form textarea {
 }
 
 form .button input {
-  background-color: #4977D1;
+  /* background-color: #4977D1; */
+  width: 8em;
+  height: 2.5em;
+  font-size: 1.2em;
+  font-weight: bold;
   color: #fff;
   border: none;
-  height: 30px;
-  margin-left: 300px;
-  width: 200px;
+  /* margin-left: 300px; */
 }
 
 .radios input {
@@ -303,3 +305,4 @@ textarea {
 #clock {
     color: #125688;
 }
+

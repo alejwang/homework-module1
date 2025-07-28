@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body id="activities">
     <!-- Container to wrap everything -->
     <div id="container">
 
-        <!-- Brand of website -->    
+        <!-- Brand of website -->
         <header>
             <!-- <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564"> -->
             <div class="main-header">
@@ -34,7 +36,11 @@
         <!-- Main Content-->
         <main>
             <h1>Activities</h1>
-            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
+            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and
+                yearly. These activities are not however run by the state park and recreational department. They are
+                operated and manage by private vendors but are partners with the state department. Therefore, for
+                schedule inquiries or information, please contact them directly. For a list of activities, please refer
+                to the table below:</p>
             <table>
                 <caption>Activities at the Cliffs</caption>
                 <thead>
@@ -114,52 +120,22 @@
         <!-- Footer Information -->
         <footer>
             <div id="nondisclaimer"></div>
-                <div class="copy">
-                    &copy; Copyright 2020 :: GreatCliffs.com
-                </div>
-                
-                <div class="social">
-                    <h3>Facebook Image</h3>
-                    <h3>Instagram Image</h3>
-                    <h3>Twitter Image</h3>
+            <div class="copy">
+                &copy; Copyright 2020 :: GreatCliffs.com
+            </div>
 
-                </div>
-            <div id="disclaimer">This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</div>
+            <div class="social">
+                <h3>Facebook Image</h3>
+                <h3>Instagram Image</h3>
+                <h3>Twitter Image</h3>
+
+            </div>
+            <div id="disclaimer">This website is designed and created solely for educational purposes only at Westcliff
+                University. All contents are not intended for any commercial gain or use.</div>
         </footer>
-        <script>
-            var imageNames = [
-            "partners/partner-bustour.png",
-            "partners/partner-cabinrental.png",
-            "partners/partner-campingadv.png",
-            "partners/partner-collegetours.png",
-            "partners/partner-rentalbike.png",
-            "partners/partner-tourgroup.png"
-        ];
-        var partnerNames = [
-            "Bus Tour",
-            "Cabin Rental",
-            "Camping Adventure",
-            "College Tours",
-            "Bike Rental",
-            "Tour Group"
-        ];
-        var openTag = '<li class="partner"><img src="images/';
-        var closeTag = '"></li>';
-        for (var i = 0; i < imageNames.length; i++) {
-            var partnerHTML = openTag + imageNames[i] + '" alt=" Partner ' + partnerNames[i] + closeTag;
-            document.getElementById("partners").innerHTML += partnerHTML;
-        }
-        </script>
+
+        <script src="js/site_scripts.js"></script>
     </div> <!-- End Container -->
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
