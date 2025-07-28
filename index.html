@@ -88,10 +88,12 @@
     <script>
         function currentTime() {
             var d = new Date();
-            var hr = d.getHours();
+            var hr = d.getHours(); 17
             var min = d.getMinutes();
             var sec = d.getSeconds();
             var ampm;
+            var utchr = d.getUTCHours(); 0
+            var timediff = utchr - hr;
 
             if (sec < 10) {
                 sec = "0" + sec;
@@ -109,7 +111,27 @@
                 ampm = 'AM';
             }
 
-            var time = hr + ":" + min + ":" + sec + " " + ampm;
+            
+            var adjTimeDiff = (timediff < 0) ? 24 + timediff : timediff;
+            var timeZone = '';
+            switch (adjTimeDiff) {
+                case 4:
+                    timeZone = 'ET';
+                    break;
+                case 5:
+                    timeZone = 'CT';
+                    break;
+                case 6:
+                    timeZone = 'MT';
+                    break;
+                case 7:
+                    timeZone = 'PT';
+                    break;
+                default:
+                    timeZone = 'Local';
+            }
+
+            var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
 
             document.getElementById("clock").innerText = time;
         }
