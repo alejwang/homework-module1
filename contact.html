@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body id="contact">
+<body id="contact" onLoad="disableButton(true)">
     <!-- Container to wrap everything -->
     <div id="container">
 
@@ -85,11 +85,11 @@
                 </div>
 
                 <div class="randomcodes">
-                    <input type="text" name="randomcode" placeholder="Enter characters">
+                    <input type="text" name="randomcode" id="codeentered" placeholder="Enter characters">
                     <p id="codes"></p>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Inquire">
+                    <input id="submit" type="submit" value="Inquire">
                 </div> 
             </fieldset>  
             </form>
