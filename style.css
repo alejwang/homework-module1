@@ -307,6 +307,10 @@ textarea {
 }
 
 
-.bg-green {
+td.bg-green {
     background-color: #9ed034 !important;
+}
+
+td.selectable {
+    cursor: pointer;
 }
