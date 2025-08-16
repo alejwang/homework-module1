@@ -5,6 +5,7 @@ $(document).ready(function () {
     .addClass("selectable")
     .click(function () {
       $(this).toggleClass("bg-green");
+      $("#myModal").modal("show");
     })
 });
 
